@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="calendar.css" rel="stylesheet">
+    <script src="calendar.js"></script>
+    <title>Calendar</title>
+</head>
+    <body onload="calendar()">
+        <div class="calcontainer">
+            <div class="calendar">
+                <div class="cal">Calendar</div>
+                <div class="header">
+                    <button class="btn-previous" onclick="previous()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                    <p id="demo"></p>
+                    <button class="btn-next" onclick="next()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+                <!-- <hr> -->
+                <div class="section">
+                    <table>
+                        <tr id="daysname">
+                        </tr>
+                    </table>
+                    <table id="displaycalendar">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
