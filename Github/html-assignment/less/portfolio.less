@@ -1,0 +1,21 @@
+@import "default.less";
+.portfolio {
+        .background(rgba(128,128,128,0.22));
+        h2,p,h4 {
+            .textalign();
+            padding-top:20px;
+            font-style: bold;
+        }
+        @media screen and (min-width:538px) {
+            img {
+                    width: 80%;
+                    margin: 20px;
+                }
+            }
+@media screen and (min-width:50px) and (max-width:537px) {
+        img {
+            width: 80%;
+            margin: 40px 40px 20px 40px;
+        }
+    }
+}

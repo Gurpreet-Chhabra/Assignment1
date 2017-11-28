@@ -1,0 +1,47 @@
+@import "default.less";
+header {
+  background-color:@background;
+  .navbar {
+     &.navbar-default {
+         &.nav-background {
+             background: red;
+             border: 0px solid;
+             margin: 0px;
+         }
+     }
+   }
+  nav {
+    a {
+      .color(@textcolor);
+    }
+
+    div {
+      ul {
+        li {
+          .nav-link{
+            .color(@textcolor);
+          }
+        }
+      }
+    }
+  }
+  .icon .icon-bar {
+      background-color: #fff!important;
+  }
+  .logo a {
+      color: #fff!important;
+  }
+}
+
+@media screen and (min-width:50px) and (max-width:767px) {
+    .nav a {
+        color: #fff!important;background: #0a0a0a;
+        color: #fff;
+        border: 1px solid white;
+    }
+}
+@media screen and (min-width:768px) {
+    .nav a {
+        color: #fff!important;
+    }
+}

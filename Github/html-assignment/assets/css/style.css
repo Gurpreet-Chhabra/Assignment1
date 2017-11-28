@@ -1,0 +1,194 @@
+.row {
+  margin: 0px;
+}
+header {
+  background-color: red;
+}
+header .navbar.navbar-default.nav-background {
+  background: red;
+  border: 0px solid;
+  margin: 0px;
+}
+header nav a {
+  color: #fff;
+}
+header nav div ul li .nav-link {
+  color: #fff;
+}
+header .icon .icon-bar {
+  background-color: #fff!important;
+}
+header .logo a {
+  color: #fff!important;
+}
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .nav a {
+    color: #fff!important;
+    background: #0a0a0a;
+    color: #fff;
+    border: 1px solid white;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav a {
+    color: #fff!important;
+  }
+}
+.banner {
+  background: red;
+  padding: 130px;
+}
+.banner-name {
+  text-align: center;
+  color: #fff;
+}
+h4 {
+  font-style: italic;
+}
+@media screen and (min-width: 640px) {
+  .search {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 538px) and (max-width: 639px) {
+  .search {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 453px) and (max-width: 537px) {
+  .search {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .search {
+    width: 200px;
+  }
+}
+button {
+  background: #c11347;
+}
+.about {
+  background: #fff0 0;
+  padding: 20px;
+}
+.about .left {
+  padding: 20px 0px 30px 70px;
+}
+.about .right {
+  padding: 80px;
+}
+.about .left {
+  padding: 5px;
+}
+.value {
+  background: rgba(128, 128, 128, 0.22);
+  padding: 20px;
+}
+.value .row img {
+  height: 150px;
+  width: 250px;
+  margin: 55px;
+}
+.value .row .fa {
+  padding: 50px 50px 50px 100px;
+}
+.service {
+  background: #fff0 0;
+}
+.service p,
+.service h2,
+.service h4 {
+  text-align: center;
+}
+.service h2,
+.service h4 {
+  padding-top: 20px;
+}
+.service .row h2,
+.service .row h4,
+.service .row span {
+  text-align: center;
+}
+.service .row h2,
+.service .row h4 {
+  padding-top: 20px;
+  color: #808080;
+}
+.service .row p {
+  font-size: 20px;
+  color: #80808073;
+}
+.service .row span {
+  padding-top: 20px;
+  font-size: 60px;
+  color: #ff00003d;
+  width: 100%;
+}
+.pricing {
+  background: white;
+}
+.pricing p,
+.pricing h2,
+.pricing h4,
+.pricing .sm1,
+.pricing li {
+  text-align: center;
+}
+.pricing .sm1 {
+  font-size: 10px;
+}
+.pricing h2,
+.pricing h4 {
+  padding-top: 25px;
+}
+.pricing .row {
+  padding: 10px 80px 10px 80px;
+}
+.pricing ul {
+  background: rgba(239, 231, 231, 0.05);
+  border: 1px solid red;
+  box-shadow: 9px 15px 10px #888888;
+  border-top: 0px;
+  height: 340px;
+}
+.pricing li {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+}
+.pricing span {
+  align-items: center;
+}
+.pricing .btn {
+  margin: 5px;
+}
+.portfolio {
+  background: rgba(128, 128, 128, 0.22);
+}
+.portfolio h2,
+.portfolio p,
+.portfolio h4 {
+  text-align: center;
+  padding-top: 20px;
+  font-style: bold;
+}
+@media screen and (min-width: 538px) {
+  .portfolio img {
+    width: 80%;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 50px) and (max-width: 537px) {
+  .portfolio img {
+    width: 80%;
+    margin: 40px 40px 20px 40px;
+  }
+}
+footer p {
+  text-align: center;
+}
+.container-fluid.content {
+  padding: 0px;
+  margin: 0px;
+}
