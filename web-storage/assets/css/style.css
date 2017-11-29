@@ -1,0 +1,58 @@
+.container-fluid {
+  border: 1px solid;
+  padding: 4px; }
+  .container-fluid header {
+    height: 65px;
+    padding: 0px;
+    background: #c1180c;
+    border-radius: 10px; }
+    .container-fluid header .todo {
+      padding: 13px; }
+    .container-fluid header label {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300; }
+    @media screen and (min-width: 626px) {
+      .container-fluid header input {
+        width: 270px;
+        border-radius: 8px;
+        height: 40px; } }
+    @media screen and (min-width: 428px) and (max-width: 625px) {
+      .container-fluid header input {
+        width: 100px;
+        border-radius: 8px;
+        height: 40px; } }
+    @media screen and (max-width: 427px) {
+      .container-fluid header input {
+        border-radius: 8px;
+        height: 40px; } }
+    .container-fluid header button {
+      background: #ccc; }
+  .container-fluid .card #displaycategory0, .container-fluid .card #displaycategory5 {
+    background: rgba(255, 152, 0, 0.54); }
+  .container-fluid .card #displaycategory1, .container-fluid .card #displaycategory6 {
+    background: rgba(121, 85, 72, 0.71); }
+  .container-fluid .card #displaycategory2, .container-fluid .card #displaycategory7 {
+    background: rgba(103, 58, 183, 0.62); }
+  .container-fluid .card #displaycategory3, .container-fluid .card #displaycategory8 {
+    background: rgba(233, 30, 99, 0.57); }
+  .container-fluid .card #displaycategory4, .container-fluid .card #displaycategory9 {
+    background: rgba(158, 158, 158, 0.52); }
+  .container-fluid .card i {
+    font-size: 18px;
+    color: black; }
+  .container-fluid .card #edit {
+    float: left; }
+  .container-fluid .card #delete {
+    float: right; }
+  .container-fluid .card .display {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
