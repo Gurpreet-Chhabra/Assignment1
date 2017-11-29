@@ -1,20 +1,20 @@
 .container-fluid {
-        border: 1px solid;
-        padding: 4px;
-        header {
-            height: 65px;
-            padding: 0px;
-            background: rgba(193,24,12,1);
-            border-radius: 10px;
-            .todo {
-                padding: 13px;
-            }
-            label {
-                color: #fff;
-                font-size: 20px;
-                font-weight: 300;
-            }
-            @media screen and (min-width:626px) {
+    border: 1px solid;
+    padding: 4px;
+    header {
+        height: 65px;
+        padding: 0px;
+        background: rgba(193,24,12,1);
+        border-radius: 10px;
+        .todo {
+            padding: 13px;
+        }
+        label {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        @media screen and (min-width:626px) {
             input {
                 width: 270px;
                 border-radius: 8px;
@@ -34,47 +34,45 @@
                 height: 40px;
             }
         }
-            button {
-                background: #ccc;
-            }
+        button {
+            background: #ccc;
         }
-        .card {
-            #displaycategory0,#displaycategory5 {
-                background: rgba(255,152,0,0.54);
-            }
-            #displaycategory1,#displaycategory6 {
-                background: rgba(121,85,72,0.71);
-            }
-            #displaycategory2,#displaycategory7 {
-                background: rgba(103,58,183,0.62);
-            }
-            #displaycategory3,#displaycategory8 {
-                background: rgba(233,30,99,0.57);
-            }
-            #displaycategory4,#displaycategory9 {
-                background: rgba(158,158,158,0.52);
-            }
-            i {
-                font-size:18px;
-                color: black;
-            }
-            #edit {
-                float: left;
-            }
-            #delete {
-                float: right;
-            }
-            .display {
-                border: 1px solid;
-                border-radius: 5px;
-                text-align: center;
-                height: 205px;
-                width: 247px;
-                margin: 10px;
-                color: #fff;
-                padding: 10px;
-            }
+    }
+    .card {
+        #displaycategory0,#displaycategory5 {
+            background: rgba(255,152,0,0.54);
         }
-
-
+        #displaycategory1,#displaycategory6 {
+            background: rgba(121,85,72,0.71);
+        }
+        #displaycategory2,#displaycategory7 {
+            background: rgba(103,58,183,0.62);
+        }
+        #displaycategory3,#displaycategory8 {
+            background: rgba(233,30,99,0.57);
+        }
+        #displaycategory4,#displaycategory9 {
+            background: rgba(158,158,158,0.52);
+        }
+        i {
+            font-size:18px;
+            color: black;
+        }
+        #edit {
+            float: left;
+        }
+        #delete {
+            float: right;
+        }
+        .display {
+            border: 1px solid;
+            border-radius: 5px;
+            text-align: center;
+            height: 205px;
+            width: 247px;
+            margin: 10px;
+            color: #fff;
+            padding: 10px;
+        }
+    }
 }
