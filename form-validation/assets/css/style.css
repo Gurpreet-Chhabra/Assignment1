@@ -24,5 +24,7 @@ header {
     font-family: serif; }
   .card .form-group input.error, .card .form-validate .form-group textarea.error {
     border-color: red !important; }
+  .card #error_msg {
+    color: rgba(3, 169, 244, 0.78); }
 
 /*# sourceMappingURL=style.css.map */

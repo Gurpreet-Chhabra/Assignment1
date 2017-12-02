@@ -63,4 +63,42 @@ $(document).ready(function(){
             }
         }
     });
+        var i = 0;
+        $("#creditcard").keyup(function() {
+        var value = $("#creditcard").val();
+        console.log(value);
+        var creditcardRegex = /[0-9 -]+$/;
+        var appendvalue;
+        if(creditcardRegex.test(value)) {
+            if(value.length == 19) {
+                $("#creditcard").removeClass("error");
+                message = "";
+                $("#error_msg").text(message);
+            }
+            else {
+                message = "credit card no must be 16 digits long";
+                $("#error_msg").text(message);
+                if(value.length % 4 == i ) {
+                    console.log(value.length %4);
+                    console.log(i);
+                    appendvalue = value + "-";
+                    $("#creditcard").val(appendvalue);
+                    if(i<3) {
+                        i++;
+                    }
+                    else {
+                        i=0;
+                    }
+                }
+                $("#creditcard").addClass("error");
+            }
+        }
+        else {
+            if(value.length > 0) {
+                message = "only digits allowed";
+                $("#error_msg").text(message);
+                $("#creditcard").addClass("error");
+            }
+        }
+    });
 });
