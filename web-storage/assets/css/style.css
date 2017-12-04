@@ -1,0 +1,117 @@
+.container-fluid {
+  padding: 4px; }
+  .container-fluid header {
+    height: 65px;
+    padding: 0px;
+    background: #c1180c;
+    border-radius: 10px; }
+    .container-fluid header .todo {
+      padding: 13px; }
+    .container-fluid header label {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300; }
+    @media screen and (min-width: 626px) {
+      .container-fluid header input {
+        width: 270px;
+        border-radius: 8px;
+        height: 40px; } }
+    @media screen and (min-width: 428px) and (max-width: 625px) {
+      .container-fluid header input {
+        width: 100px;
+        border-radius: 8px;
+        height: 40px; } }
+    @media screen and (max-width: 427px) {
+      .container-fluid header input {
+        border-radius: 8px;
+        height: 40px; } }
+    .container-fluid header button {
+      background: #ccc; }
+  .container-fluid .card .display0, .container-fluid .card .display5 {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(255, 152, 0, 0.54); }
+  .container-fluid .card .display1, .container-fluid .card .display6 {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(121, 85, 72, 0.71); }
+  .container-fluid .card .display2, .container-fluid .card .display7 {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(103, 58, 183, 0.62); }
+  .container-fluid .card .display3, .container-fluid .card .display8 {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(233, 30, 99, 0.57); }
+  .container-fluid .card .display4, .container-fluid .card .display9 {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    background: rgba(158, 158, 158, 0.52); }
+  .container-fluid .card i {
+    font-size: 18px;
+    color: black; }
+  .container-fluid .card .edit {
+    float: left;
+    background: snow; }
+  .container-fluid .card .delete {
+    float: right;
+    background: snow; }
+  .container-fluid .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .container-fluid .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    margin: 0 33%; }
+  .container-fluid .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; }
+  .container-fluid .close:hover,
+  .container-fluid .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

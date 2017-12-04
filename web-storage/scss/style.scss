@@ -1,0 +1,115 @@
+@mixin displaycard {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    height: 205px;
+    width: 247px;
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+}
+.container-fluid {
+    padding: 4px;
+    header {
+        height: 65px;
+        padding: 0px;
+        background: rgba(193,24,12,1);
+        border-radius: 10px;
+        .todo {
+            padding: 13px;
+        }
+        label {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        @media screen and (min-width:626px) {
+            input {
+                width: 270px;
+                border-radius: 8px;
+                height: 40px;
+            }
+        }
+        @media screen and (min-width:428px) and (max-width:625px) {
+            input {
+                width: 100px;
+                border-radius: 8px;
+                height: 40px;
+            }
+        }
+        @media screen and (max-width:427px) {
+            input {
+                border-radius: 8px;
+                height: 40px;
+            }
+        }
+        button {
+            background: #ccc;
+        }
+    }
+    .card {
+        .display0,.display5 {
+            @include displaycard;
+            background: rgba(255,152,0,0.54);
+        }
+        .display1,.display6 {
+            @include displaycard;
+            background: rgba(121,85,72,0.71);
+        }
+        .display2,.display7 {
+            @include displaycard;
+            background: rgba(103,58,183,0.62);
+        }
+        .display3,.display8 {
+            @include displaycard;
+            background: rgba(233,30,99,0.57);
+        }
+        .display4,.display9 {
+            @include displaycard;
+            background: rgba(158,158,158,0.52);
+        }
+        i {
+            font-size:18px;
+            color: black;
+        }
+        .edit {
+            float: left;
+            background: snow;
+        }
+        .delete {
+            float: right;
+            background: snow;
+        }
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        margin: 0 33%;
+    }
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

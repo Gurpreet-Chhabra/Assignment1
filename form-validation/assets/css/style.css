@@ -1,0 +1,30 @@
+body {
+  background: #eeeeee; }
+
+header {
+  text-align: center; }
+
+.card {
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: 50px;
+  border-radius: 1px solid; }
+  .card .content .form-validate .form-group {
+    padding: 10px;
+    margin: 25px; }
+  .card .content .btn {
+    margin: 20px 37px; }
+  .card .form-control {
+    color: grey; }
+  .card .error {
+    color: rgba(3, 169, 244, 0.43);
+    font-size: 15px;
+    font-family: serif; }
+  .card .form-group input.error, .card .form-validate .form-group textarea.error {
+    border-color: red !important; }
+  .card #error_msg {
+    color: rgba(3, 169, 244, 0.78); }
+
+/*# sourceMappingURL=style.css.map */

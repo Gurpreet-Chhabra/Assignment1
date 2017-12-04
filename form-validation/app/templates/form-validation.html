@@ -1,0 +1,73 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Form Validation</title>
+    	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+        <script src="../../js/validate.js"></script>
+        <link href="../../assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <header><h2>Form    </h2></header>
+                <hr>
+                <div class="content">
+                    <form action="" method="" id="formvalidation" class="form-validate">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Firstname">
+                                </div>
+                                <div class="col-xs-6">
+                                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Lastname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="email">
+                                </div>
+                                <div class="col-xs-6">
+                                <input type="text" name="contact" class="form-control" id="contact" placeholder="Contact No.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="col-xs-6">
+                                <input type="password" name="confirm_password" class="form-control" id="confirm_password" placeholder="Confirm password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <input type="file" name="upload" class="form-control" id="upload" placeholder="Select a file">
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="text" name="creditcard" maxlength="19" class="form-control" id="creditcard" placeholder="Creditcard">
+                                    <span id="error_msg"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <input type="submit" class="btn btn-primary" value="Save">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
