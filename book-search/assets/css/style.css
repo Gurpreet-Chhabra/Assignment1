@@ -1,0 +1,44 @@
+header {
+  height: 75px;
+  padding: 18px;
+  background: black;
+  border-radius: 10px;
+  margin: 3px 10px; }
+
+section {
+  padding: 40px 30px 30px 40px;
+  height: 1000px; }
+  section .len {
+    word-wrap: break-word;
+    height: 100px; }
+  section .title {
+    height: 200px; }
+  section .enlarge {
+    font-size: 20px; }
+
+.book {
+  height: 350px; }
+
+.comment {
+  margin: auto; }
+  .comment .text {
+    width: 67%; }
+  @media screen and (min-width: 1006px) {
+    .comment .displaycomment {
+      margin-left: 31%; } }
+  .comment .showcomment {
+    padding-left: 50px; }
+  .comment #saveComment {
+    float: left; }
+  .comment span {
+    padding: 5px; }
+  .comment .display {
+    display: block;
+    margin-bottom: 50px; }
+  .comment .commentbox {
+    visibility: hidden; }
+
+footer {
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

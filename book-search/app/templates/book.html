@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Book-search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class"row">
+            <div class="col-lg-offset-6 col-sm-offset-6">
+               <div class="input-group">
+                 <input type="text" class="form-control" id="search" placeholder="Search for...">
+                     <span class="input-group-btn">
+                         <button class="btn btn-default" type="button">Go!</button>
+                     </span>
+               </div>
+           </div>
+         </div>
+     </header>
+	 <section class="book">
+     </section>
+    <section class="comment">
+        <div class="col-md-offset-4 col-md-6 commentbox">
+            <label for="exampleTextarea">Message</label>
+            	<div class="input-group display">
+	                <textarea class="form-control text" id="comment" rows="3" placeholder="Please leave a comment below......"></textarea>
+	                <span class="input-group-btn">
+	                    <button class="btn btn-primary" id="saveComment"><span>Save</span></button>
+	                </span>
+            	</div>
+        </div>
+    </section>
+    <footer>
+		<script src="../../js/book.js"></script>
+    </footer>
+</body>
+</html>
