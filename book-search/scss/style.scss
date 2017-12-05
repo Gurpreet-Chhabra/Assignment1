@@ -1,0 +1,56 @@
+header {
+    height: 75px;
+    padding: 18px;
+    background: black;
+    border-radius: 10px;
+    margin: 3px 10px;
+}
+section {
+    padding: 40px 30px 30px 40px;
+    height: 1000px;
+
+    .len {
+        word-wrap: break-word;
+        height: 100px;
+    }
+    .title {
+        height: 200px;
+    }
+    .enlarge {
+        font-size: 20px;
+    }
+}
+.book {
+    height: 350px;
+}
+.comment {
+    margin: auto;
+    .text {
+        width:67%;
+    }
+    @media screen and (min-width:1006px)  {
+        .displaycomment {
+            margin-left: 31%;
+        }
+    }
+
+    .showcomment {
+        padding-left: 50px;
+    }
+    #saveComment {
+        float: left;
+    }
+    span {
+        padding: 5px;
+    }
+    .display {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .commentbox {
+        visibility:hidden;
+    }
+}
+footer {
+    visibility: hidden;
+}
