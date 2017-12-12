@@ -1,0 +1,398 @@
+<html>
+    <head>
+        <title>Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/responsive.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row sticky">
+                <header>
+                    <div class="col-sm-8 col-xs-6">
+                        <div class="logo">
+                            <img src="../../assets/images/logo.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <nav class="navbar">
+                            <ul class="menu">
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-bell-o"></i></a></li>
+                                <li><a href="#"><i class="fa fa-comments"></i></a></li>
+                                <li class="dropdown-menu">
+                                    <div class="col-sm-1">
+                                        <img src="../../assets/images/logout.png" class="logout-img">
+                                    </div>
+                                    <a href="#" id="logout"> John Doe<i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-list">
+                                        <li><i class="fa fa-user"></i>Profile</li>
+                                        <li><i class="fa fa-sign-out"></i>Logout</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#" id="nav-btn"><i class="fa fa-bars" id="navbar-collapse" aria-hidden="true"></i></a>
+                    </div>
+                </header>
+            </div>
+            <div class="text">Profile</div>
+                <div class="row">
+                    <section>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="section-left">
+                                <div class="card">
+                                    <div class="social-profile">
+                                        <img src="../../assets/images/profile.jpg" alt="">
+                                        <h4>Josephin Villa</h4>
+                                        <p>Software Engineer</p>
+                                        <p class="description">
+                                        Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incidi dunt ut labore et.Lorem ipsum dolor sit amet, consecte.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="skills">
+                                        <h4>Technical Skills</h4>
+                                        <div class="skill-set">
+                                            Photoshop
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                        <div class="skill-set">
+                                            PHP
+                                            <div class="progress-bar primary"></div>
+                                        </div>
+                                        <div class="skill-set">
+                                            Java
+                                            <div class="progress-bar success"></div>
+                                        </div>
+                                        <div class="skill-set">
+                                            Andriod
+                                            <div class="progress-bar danger"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <div class="section-right">
+                                <div class="timeline">
+                                    <ul class="timeline-menu">
+                                        <li><a href="#" class="nav-link active" id="personal">Personal Info</a>
+                                            <div class="slide active" id="personal-slide"></div>
+                                        </li>
+                                        <li> <a href="#" class="nav-link" id="project">Project</a>
+                                            <div class="slide" id="project-slide"></div>
+                                        </li>
+                                        <li><a href="#" class="nav-link" id="general">General</a>
+                                            <div class="slide" id="general-slide"></div>
+                                        </li>
+                                        <li><a href="#" class="nav-link" id="membership">Membership</a>
+                                            <div class="slide" id="membership-slide"></div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="timeline-content active" id="personal-content">
+                                <div class="card">
+                                    <div class="row">
+                                            <h4 id="about-me">About me</h4>
+                                            <a  id="edit"><i class="fa fa-pencil-square-o"></i></a>
+                                    </div>
+                                    <hr>
+                                    <table class="show-profile">
+                                        <tr>
+                                            <td class="heading">Name:</td>
+                                            <td id="edit-name">Gurpreet Chhabra</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="heading">Email:</td>
+                                            <td id="edit-email">abc@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="heading">Ph No:</td>
+                                            <td id="edit-mobile">9098748254</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="heading">Address:</td>
+                                            <td id="edit-address">Dewas landmark apartment</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="edit-info">
+                                    <div class="card">
+                                        <div class="row">
+                                                <h4 id="about-me">About me</h4>
+                                                <a href="#" id="close"><i class="fa fa-times"></i></a>
+                                        </div>
+                                        <hr>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="name" placeholder="name" id="name">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="email" placeholder="email" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="mobile" placeholder="mobile" id="mobile">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="address" placeholder="Address" id="address">
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="button" id="save">Save</button>
+                                                <button type="button" id="cancel">Cancel</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="card">
+                                            <h4>Experience</h4>
+                                            <hr>
+                                            <ul>
+                                                <li><i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="card">
+                                            <h4>Experience</h4>
+                                            <hr>
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li><i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-check"></i>
+                                                    Marketing Managament -   Apple Inc
+                                                    <p>Oct 2013 - Mar 2014</p>
+                                                </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <h4>Professional skills</h4>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-3 wrap-status">
+                                            <canvas class="progress" id="bar-25"><span>25</span></canvas>
+                                            <div class="status"></div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-3 wrap-status">
+                                            <canvas class="progress" id="bar-50"><span>50</span> </canvas>
+                                            <div class="status"></div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-3 wrap-status">
+                                            <canvas class="progress" id="bar-75"><span>75</span></canvas>
+                                            <div class="status"></div>
+                                        </div>
+                                        <div class="col-sm-3 col-xs-3 wrap-status">
+                                            <canvas class="progress" id="bar-100"><span>100</span> </canvas>
+                                            <div class="status"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-content" id="project-content">
+                                <div class="card">
+                                    <table>
+                                        <thead>
+                                            <th>Photo</th>
+                                            <th>Client</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </thead>
+                                        <tr>
+                                            <td class="project-td"><img src="../../assets/images/photo.png"></img></td>
+                                            <td class="project-td">Web consultant</td>
+                                            <td class="project-td">October 25,2017</td>
+                                            <td class="project-td">October 29,2017</td>
+                                            <td class="project-td"><span>Finish</span></td>
+                                            <td class="project-td">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-td"><img src="../../assets/images/photo.png"></img></td>
+                                            <td class="project-td">Web consultant</td>
+                                            <td class="project-td">October 25,2017</td>
+                                            <td class="project-td">October 29,2017</td>
+                                            <td class="project-td"><span>Finish</span></td>
+                                            <td class="project-td">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-td"><img src="../../assets/images/photo.png"></img></td>
+                                            <td class="project-td">Web consultant</td>
+                                            <td class="project-td">October 25,2017</td>
+                                            <td class="project-td">October 29,2017</td>
+                                            <td class="project-td"><span>Finish</span></td>
+                                            <td class="project-td">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-td"><img src="../../assets/images/photo.png"></img></td>
+                                            <td class="project-td">Web consultant</td>
+                                            <td class="project-td">October 25,2017</td>
+                                            <td class="project-td">October 29,2017</td>
+                                            <td class="project-td"><span>Finish</span></td>
+                                            <td class="project-td">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="project-td"><img src="../../assets/images/photo.png"></img></td>
+                                            <td class="project-td">Web consultant</td>
+                                            <td class="project-td">October 25,2017</td>
+                                            <td class="project-td">October 29,2017</td>
+                                            <td class="project-td"><span>Finish</span></td>
+                                            <td class="project-td">
+                                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="timeline-content" id="general-content">
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat test.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat test done.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-content" id="membership-content">
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat test.
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <div class="card">
+                                        <a><span><i class="fa fa-plus" aria-hidden="true"></i></span>This is Photoshop's version  of Lorem Ipsum?</a>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="card">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat test done.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        <script src="../../js/responsive.js"></script>
+    </body>
+</html>
