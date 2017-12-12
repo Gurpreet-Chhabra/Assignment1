@@ -6,3 +6,4 @@
 4. Form validation.
 5. Local storage.
 6. Book search.
+7. Responsive grid without bootstrap.
