@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-3">
+        <app-navbar-left></app-navbar-left>
+    </div>
+    <div class="col-sm-9">
+        <div class="row">
+            <div *ngFor="let book of books" class="col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading len">
+                        <h4><a routerLink="{{book.ID}}">{{book.Title}}</a></h4>
+                    </div>
+                    <div class="panel-body title">
+                        <p>{{book.Description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-3">
+        <app-navbar-left></app-navbar-left>
+    </div>
+    <div class="col-sm-9">
+        <section class="book" *ngIf="!error">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="panel panel-default enlarge">
+                    <div class="panel-heading len">
+                        <h4><a href=""> {{book.Title}}</a></h4>
+                    </div>
+                    <img src="{{book.Image}}">
+                    <div class="panel-body title"><p>{{book.Description}}</p></div>
+                </div>
+            </div>
+         </section>
+         <section *ngIf="error">
+             <div class="not-found">
+                 <div class="alert alert-info alert-dismissable">
+                    <a href="#" class="close" routerLink="back" aria-label="close">×</a>
+                    <strong>Book Not Found!</strong>
+                </div>
+            </div>
+         </section>
+     </div>
+</div>
