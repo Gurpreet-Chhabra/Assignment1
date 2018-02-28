@@ -1,0 +1,44 @@
+.navbar-style {
+    padding: 0px;
+    background: #3996D6;
+    a {
+        color: #F5F8FA;
+    }
+    .fa-bell {
+        color:#F5F8FA;
+        font-size: 20px;
+        transform: rotate(-40deg);
+    }
+    .btn-collapse {
+        background: white;
+    }
+    li .active {
+        color: red;
+    }
+    .bell-right {
+        padding-right: 10px;
+    }
+    .header-profile  {
+        border-radius: 50%;
+    }
+    .dropdown {
+        list-style: none;
+        .dropdown-item  {
+            color: black;
+        }
+    }
+    @media screen and (min-width:500px) {
+        .dropdown-menu {
+            left:-54px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .nav-item{
+            padding: 5px 10px;
+        }
+    }
+    .header-profile {
+        padding-right: 8px;
+    }
+}

@@ -1,0 +1,33 @@
+.card {
+    margin-top: 40px;
+    padding: 20px;
+    .contact-text {
+        text-transform: uppercase;
+        color: #6F777B;
+    }
+    .text-strong {
+        color: red;
+        text-transform: uppercase;
+    }
+    .address {
+        p {
+            margin: 0px;
+        }
+    }
+    .required-label::after {
+        color: red;
+        content: "*";
+    }
+    .form-control {
+        background: #C7C7C5;
+    }
+    .bg-image {
+        background-image: url("../../assets/images/bg.png");
+    }
+    .image {
+        padding-top: 10px;
+    }
+    .contact_us {
+        padding: 10px;
+    }
+}

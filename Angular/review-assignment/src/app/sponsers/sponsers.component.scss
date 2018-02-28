@@ -1,0 +1,49 @@
+.section-right {
+
+  .sponsered-card, {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #d6d2d2;
+    margin-bottom: 20px;
+    padding: 0 10px 10px;
+
+    .sponsered-card-text, .likes-card-text {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+
+    p{
+      margin-top: 5px;
+    }
+    .btn {
+      border-color: #4267B2;
+      color: #4267B2;
+    }
+  }
+
+  .likes-card {
+      margin-top: 10px;
+     background-color: #ffffff;
+     border: 1px solid #d6d2d2;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     margin-bottom: 0;
+     padding: 10px 10px;
+    .avatar {
+      border-radius: 50%;
+      width: 60px;
+      margin-bottom: 18px;
+    }
+    .btn {
+      border-color: #4267B2;
+      color: #4267B2;
+    }
+  }
+  .likes-card-footer {
+    border: 1px solid #d6d2d2;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+  }
+}

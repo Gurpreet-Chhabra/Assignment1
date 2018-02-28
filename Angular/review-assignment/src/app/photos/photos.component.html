@@ -1,0 +1,37 @@
+<p class="text-muted"><strong>Photos </strong>Edit</p>
+<div class="row">
+    <div class="col-sm-6 img-left">
+        <a (click)="enlargeImage(SUNSET_IMG , modal)"><img class="image" src="{{SUNSET_IMG}}"></a>
+    </div>
+    <div class="col-sm-6 img-right">
+        <a (click)="enlargeImage(SEA_IMG , modal)"><img class="image" src="{{SEA_IMG}}"></a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 img-left">
+        <a (click)="enlargeImage(MOUNTAIN_IMG, modal)"><img class="image" src="{{MOUNTAIN_IMG}}"></a>
+    </div>
+    <div class="col-sm-6 img-right">
+        <a (click)="enlargeImage(ROAD_IMG, modal)"><img class="image" src="{{ROAD_IMG}}"></a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 img-left">
+        <a (click)="enlargeImage(BRIDGE_IMG, modal)"><img class="image" src="{{BRIDGE_IMG}}"></a>
+    </div>
+    <div class="col-sm-6 img-right">
+        <a (click)="enlargeImage(CITY_IMG, modal)"><img class="image" src="{{CITY_IMG}}"></a>
+    </div>
+</div>
+
+<ng-template #modal let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Image</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <img src="{{modalImage}}" class="modal-image ml-auto mr-auto">
+  </div>
+</ng-template>

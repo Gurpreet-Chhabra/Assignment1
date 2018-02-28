@@ -1,0 +1,24 @@
+.background-img {
+    height: 100%;
+    width: 100%;
+}
+.profile_img {
+    border-radius: 50%;
+    top: -40px;
+    .img-round {
+        border-radius: 50%;
+    }
+}
+
+.photos {
+    margin-top: 20px;
+}
+
+@media screen and(max-width:400px)  {
+    .profile_img {
+        width: 150px;
+        height: 150px;
+        top:-80px;
+    }
+
+}
