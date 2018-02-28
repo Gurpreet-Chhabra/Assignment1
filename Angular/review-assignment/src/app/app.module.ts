@@ -21,7 +21,7 @@ import { HomeService } from './home/home.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CommentComponent } from './comment/comment.component';
 import { LocalForageService } from './localForage.service';
-import { LocalForageConfigService } from './LocalForage.config.service';
+import { LocalForageConfigService } from './localForage.config.service';
 import { AuthGuard } from './auth.guard.service';
 
 @NgModule({

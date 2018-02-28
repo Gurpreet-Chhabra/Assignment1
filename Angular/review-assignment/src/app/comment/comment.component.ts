@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Ng2FileInputService, Ng2FileInputAction } from 'ng2-file-input';
 import { LocalForageService } from '../localForage.service';
-import { LocalForageConfigService } from '../LocalForage.config.service';
+import { LocalForageConfigService } from '../localForage.config.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-comment',
