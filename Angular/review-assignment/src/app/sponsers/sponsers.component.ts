@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AVATAR_FAT, AVATAR_MDO, YELLOW_BUILDING_IMG} from '../constants/constants';
 
 @Component({
   selector: 'app-sponsers',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sponsers.component.scss']
 })
 export class SponsersComponent implements OnInit {
-  AVATAR_FAT = 'https://bootstrap-themes.github.io/application/assets/img/avatar-fat.jpg';
-  AVATAR_MDO = 'https://bootstrap-themes.github.io/application/assets/img/avatar-mdo.png';
-  YELLOW_BUILDING_IMG = "https://bootstrap-themes.github.io/application/assets/img/instagram_2.jpg";
+
+  AVATAR_FAT = AVATAR_FAT;
+  AVATAR_MDO = AVATAR_MDO;
+  YELLOW_BUILDING_IMG = YELLOW_BUILDING_IMG;
+
   constructor() { }
 
   ngOnInit() {

@@ -7,6 +7,7 @@ export class LocalforageService {
     constructor(private ngForage: NgForage) {}
 
     public setItem(options) : Promise<any> {
+        console.log(options);
         if(!options || !options.key) {
            return Promise.reject(null);
         }

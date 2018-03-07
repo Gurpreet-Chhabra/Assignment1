@@ -5,7 +5,7 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 export class HomeService {
     loginData: Object;
     constructor(private http: Http) {
-        
+
     }
 
     setLoginData(data) {
@@ -18,6 +18,6 @@ export class HomeService {
     }
 
     getData() : Observable<any>{
-        return this.http.get("../assets/json/profile.json").map(data => data.json());
+        return this.http.get('../assets/json/profile.json').map(data => data.json());
     }
 }

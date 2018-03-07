@@ -43,7 +43,7 @@ export class AboutComponent implements OnInit {
               }
           },
           (error) => {
-
+              console.log(error);
           }
       );
   }

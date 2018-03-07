@@ -13,6 +13,9 @@ export class LoginComponent implements OnInit {
 
  email: string;
  password: string;
+ showEmailErrorMsg:boolean = false;
+ showPassErrorMsg:boolean = false;
+
   constructor(private fb: FacebookService , private router: Router , private homeService: HomeService , private lfsService: LocalForageService) {
 
   }
@@ -40,10 +43,23 @@ export class LoginComponent implements OnInit {
         (error) => {
             console.log(error);
         });
-        }).catch((error: any) => console.error("error"));
+    }).catch((error: any) => console.error('error'));
   }
 
-  login() {
+  login({value, valid }) {
+      this.showEmailErrorMsg = false;
+      this.showPassErrorMsg = false;
+      if(!valid ) {
+          if(!value.emailVal) {
+            this.showEmailErrorMsg = true;
+             return;
+        }
+        else {
+            if(!value.passwordVal) {
+                this.showPassErrorMsg = true;
+            }
+        }
+      }
       this.lfsService.setItem({key: 'isLoggedIn' , value: true}).then(()=> {
           this.router.navigate(['profile']);
       });

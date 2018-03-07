@@ -23,6 +23,8 @@ import { CommentComponent } from './comment/comment.component';
 import { LocalForageService } from './localForage.service';
 import { LocalForageConfigService } from './localForage.config.service';
 import { AuthGuard } from './auth.guard.service';
+import { LightswitchCompComponent } from './lightswitch-comp/lightswitch-comp.component';
+// import { MomentModule } from 'angular2-moment';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { AuthGuard } from './auth.guard.service';
     PostComponent,
     PhotosComponent,
     SponsersComponent,
-    CommentComponent
+    CommentComponent,
+    LightswitchCompComponent
   ],
   imports: [
     BrowserModule,

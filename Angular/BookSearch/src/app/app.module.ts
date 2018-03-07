@@ -15,6 +15,7 @@ import { LocalforageconfigService } from './localforageconfig.service';
 import { AuthGuard} from './auth.guard';
 import { BookListService } from './booklist/booklist.service';
 import { BookService } from './book/book.service';
+import { NewComponent } from './new/new.component';
 
 const routes: Routes = [
     {path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -25,6 +26,10 @@ const routes: Routes = [
     {path: 'back', redirectTo: 'book',pathMatch: 'full'},
     {path: 'logout', redirectTo: 'login'},
     {path: '**', redirectTo: 'login'}
+    // {path: '', redirectTo: 'login', pathMatch: 'full' },
+    // {path: 'login',component: LoginComponent},
+    // {path: 'book',component: BooklistComponent, canActivate:[AuthGuard]},
+    // {path: '**', redirectTo: 'login'}
 ];
 
 @NgModule({
@@ -34,7 +39,8 @@ const routes: Routes = [
     NavbarLeftComponent,
     BooklistComponent,
     BookComponent,
-    LoginComponent
+    LoginComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,

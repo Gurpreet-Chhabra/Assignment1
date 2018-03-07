@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
                 this.lfs.getItem({key: 'isLoggedIn'}).then(
                     (value)=> {
                        if(value) {
+                           console.log(value);
                            this.isLoggedIn = value;
                        }
                     });

@@ -43,12 +43,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-
-
   }
 
   logout() {
-      this.lfsService.removeAllItem();
+      this.lfsService.removeItem({key: 'isLoggedIn'});
       this.isLoggedIn = false;
       this.router.navigate(['home']);
   }

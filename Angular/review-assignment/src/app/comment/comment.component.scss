@@ -1,20 +1,23 @@
-.card {
-    margin-top: 40px;
-    padding: 20px 0px;
-    border-radius: 10px;
-    .required-label::after {
-        color: red;
-        content: "*";
-    }
-    input:focus {
-        border: 1px solid blue;
-        outline: none!important;
-    }
-    input.ng-invalid.ng-touched  {
-        border: 1px solid red;
-    }
-    .help-text {
-        color: red;
-        font-size: 10px;
+.commentForm {
+    margin: 0px 34px;
+    .card {
+        margin-top: 40px;
+        padding: 20px 0px;
+        border-radius: 10px;
+        .required-label::after {
+            color: red;
+            content: "*";
+        }
+        input:focus {
+            border: 1px solid blue;
+            outline: none!important;
+        }
+        input.ng-invalid.ng-touched  {
+            border: 1px solid red;
+        }
+        .help-text {
+            color: red;
+            font-size: 10px;
+        }
     }
 }

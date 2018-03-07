@@ -18,6 +18,7 @@ export class CommentComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   postComment({value, valid }) {
       this.showCommentErrorMsg = false;
       this.showImageErrorMsg = false;

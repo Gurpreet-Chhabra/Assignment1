@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot , CanActivateChild} from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { LocalforageService } from './localforage.service';
 @Injectable()

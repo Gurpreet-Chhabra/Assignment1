@@ -1,20 +1,27 @@
-.card {
-    background: #fff;
-    padding: 20px ;
-    margin-top: 5%;
-    .login-image {
-        width: 65%;
-        height: 38px;
+@media screen and (max-width:450px) {
+    .loginForm {
+        margin: 10px;
     }
-    button {
-        background: #4267B2;
-    }
-    .login {
-        padding-top: 20px 0px;
-    }
-    .help-text {
-        color: red;
-        font-size: 10px;
+}
+.loginForm {
+    .card {
+        background: #fff;
+        padding: 20px ;
+        margin-top: 5%;
+        .login-image {
+            width: 65%;
+            height: 38px;
+        }
+        button {
+            background: #4267B2;
+        }
+        .login {
+            padding-top: 20px 0px;
+        }
+        .help-text {
+            color: red;
+            font-size: 10px;
+        }
     }
 }
 input:focus {

@@ -18,7 +18,8 @@ export class LoginComponent implements OnInit {
           this.lfs.getItem({key: 'isLoggedIn'}).then(
               (value) => {
                  if(value) {
-                     router.navigate(['book']);
+
+                     // router.navigate(['book']);
                  }
               });
       }

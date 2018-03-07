@@ -5,13 +5,13 @@
 
 <div *ngFor="let post of newPost">
     <div class="row post">
-        <div class="col-sm-2 col-xs-2">
-            <img class="img-round" src="{{imgUrl}}" popoverTitle="Image" ngbPopover="{{post.image}}">
+        <div class="col-3 col-sm-2">
+            <img class="img-round" src="{{imgUrl}}" popoverTitle="Image" ngbPopover="{{imgUrl}}">
         </div>
-        <div class="col-sm-10 col-xs-10">
+        <div class="col-9 col-sm-10">
             <div class="row">
-                <div class="col-sm-8 col-md-9"><strong>Name</strong></div>
-                <div class="col-sm-4 col-md-3"><p class="text-muted">{{post.time}}</p></div>
+                <div class="col-7 col-sm-6"><strong>Name</strong></div>
+                <div class="col-5 col-sm-6 text-right"><p class="text-muted">{{post.time}}</p></div>
             </div>
             {{post.comment}}
             <img class="img-sea" src="{{post.image}}">
@@ -20,43 +20,42 @@
     </div>
 </div>
     <div class="row post">
-        <div class="col-sm-2">
+        <div class="col-3 col-sm-2">
             <img class="img-round" src="{{AVATAR_FAT}}" popoverTitle="Image" ngbPopover="{{AVATAR_FAT}}">
         </div>
-        <div class="col-sm-10">
+        <div class="col-9 col-sm-10">
             <div class="row">
-                <div class="col-sm-8 col-md-9"><strong>Name</strong></div>
-                <div class="col-sm-4 col-md-3"><p class="text-muted">28 min ago</p></div>
+                <div class="col-7 col-sm-6"><strong>Name</strong></div>
+                <div class="col-5 col-sm-6 text-right"><p class="text-muted">28 min</p></div>
             </div>
             Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters.
         </div>
-        <div class="col-sm-2"></div>
     </div>
     <div class="row post">
-        <div class="col-sm-2">
+        <div class="col-3 col-sm-2">
             <img class="img-round" src="{{AVATAR_MDO}}" ngbPopover="{{AVATAR_MDO}}" popoverTitle="Image">
         </div>
-        <div class="col-sm-10">
+        <div class="col-9 col-sm-10">
             <div class="row">
-                <div class="col-sm-8 col-md-9"><strong>Name</strong></div>
-                <div class="col-sm-4 col-md-3"><p class="text-muted">1 day ago</p></div>
+                <div class="col-8 col-sm-6"><strong>Name</strong></div>
+                <div class="col-4 col-sm-6 text-right"><p class="text-muted">1 day</p></div>
             </div>
-            Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters.
+            Text messaging, texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters.
             <img class="img-sea" src="{{SEA_IMG}}">
         </div>
-
     </div>
+
     <div class="row post">
-        <div class="col-sm-2">
+        <div class="col-3 col-sm-2">
             <img class="img-round" src="{{AVATAR_MDO}}" ngbPopover="{{AVATAR_FAT}}" popoverTitle="Image">
         </div>
-        <div class="col-sm-10">
+        <div class="col-9 col-sm-10">
             <div class="row">
-                <div class="col-sm-8 col-md-9"><strong>Name</strong></div>
-                <div class="col-sm-4 col-md-3"><p class="text-muted">5 min ago</p></div>
+                <div class="col-8 col-sm-6"><strong>Name</strong></div>
+                <div class="col-4 col-sm-6 text-right"><p class="text-muted">1 day</p></div>
             </div>
-            Text messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters.
+            Text messaging, texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters.
         </div>
-        <div class="col-sm-2"></div>
+
     </div>
 </div>
