@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Includes Data Tables for Angular.
+    In "datatable" component.
+    Used "angular-datatables" npm module.
+
+
+Includes Angular 5 Calendar module.
+    In "angularcalendar" component.
+    Used "angular-datatables" npm module.
+    Links https://mattlewis92.github.io/angular-calendar/#/no-events-label
+
+Includes ag-grid Tables.
+  In "Ag-grid" component.
+  Used "ag-grid-angular/main" npm module
+  Links referred: https://www.ag-grid.com/best-angular-2-data-grid/
+
+Includes Materialize table.
+  In "material-table" component.
+  Used "@angular/material" npm module
+  Links referred: "https://material.angular.io/components/table/overview"
