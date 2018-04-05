@@ -40,11 +40,26 @@ export class PostComponent implements OnInit {
       );
   }
 
-  getNewPost() {
-      this.lfsService.getItem({key: 'post'}).then((value) => {
-              if(value != null)
-              this.getPostTime(value);
+
+  deletePost(id) {
+      console.log(id);
+      this.homeService.deletePost(id).subscribe(data => {
+        this.getNewPost();
+        // this.getPostTime(data);
       });
+
+  }
+
+  getNewPost() {
+    this.homeService.getPostFromDb().subscribe(data => {
+      console.log(data);
+      this.getPostTime(data);
+    });
+      // this.lfsService.getItem({key: 'post'}).then((value) => {
+      //         if(value != null)
+      //         console.log(value);
+      //
+      // });
   }
 
   getPostTime(value) {

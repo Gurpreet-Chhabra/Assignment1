@@ -9,6 +9,7 @@ import { FacebookModule } from 'ngx-facebook';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+// import { HomeComponent1 } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
@@ -23,10 +24,35 @@ import { CommentComponent } from './comment/comment.component';
 import { LocalForageService } from './localForage.service';
 import { LocalForageConfigService } from './localForage.config.service';
 import { AuthGuard } from './auth.guard.service';
-import { LightswitchCompComponent } from './lightswitch-comp/lightswitch-comp.component';
-// import { MomentModule } from 'angular2-moment';
+import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider} from "angularx-social-login";
+import { TimeoutComponent } from './timeout/timeout.component';
+import {NgIdleKeepaliveModule} from '@ng-idle/keepalive';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MomentModule } from 'angular2-moment';
+import { SessionTimerComponent } from './session-timer/session-timer.component';
+import { TimeOutService } from './timeout/timeout.service';
+
+
+
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+      [
+        {
+          id: FacebookLoginProvider.PROVIDER_ID,
+          provider: new FacebookLoginProvider("940115632819722")
+        },
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider("621462507873-c06vqnog0ujivgmjvsu72s0r0u4t2ood.apps.googleusercontent.com")
+        }
+      ]);
+  return config;
+}
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
     DashboardComponent,
@@ -40,19 +66,28 @@ import { LightswitchCompComponent } from './lightswitch-comp/lightswitch-comp.co
     PhotosComponent,
     SponsersComponent,
     CommentComponent,
-    LightswitchCompComponent
+    TimeoutComponent,
+    SessionTimerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpModule,
+    HttpClientModule,
     NgForageModule,
     Ng2FileInputModule.forRoot(),
     NgbModule.forRoot(),
-    FacebookModule.forRoot()
+    MomentModule,
+    NgIdleKeepaliveModule.forRoot(),
+    FacebookModule.forRoot(),
+    SocialLoginModule
   ],
-  providers: [HomeService, LocalForageService,LocalForageConfigService ,AuthGuard],
+  providers: [HomeService, LocalForageService,LocalForageConfigService ,AuthGuard , TimeOutService,
+    {
+        provide: AuthServiceConfig,
+        useFactory: getAuthServiceConfigs
+      }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

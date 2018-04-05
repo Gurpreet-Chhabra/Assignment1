@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TimeOutService } from '../timeout/timeout.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: TimeOutService) {
+    this.service.setTimer();
+      // console.log(this.service);
+   }
 
   ngOnInit() {
   }

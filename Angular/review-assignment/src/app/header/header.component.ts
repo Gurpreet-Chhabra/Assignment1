@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { HomeService } from '../home/home.service';
+import { TimeOutService } from '../timeout/timeout.service';
 import {Observable} from 'rxjs/Rx';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -14,7 +15,7 @@ export class HeaderComponent implements OnInit {
   loginData: any;
   imgUrl: string;
   isLoggedIn: boolean = false;
-  constructor(private homeService: HomeService , private http: Http , private lfsService: LocalForageService , private router: Router) {
+  constructor(private homeService: HomeService , private http: Http , private lfsService: LocalForageService , private router: Router , private timeOutService: TimeOutService) {
       this.router.events
       .subscribe((event) => {
           this.lfsService.getItem({key: 'isLoggedIn'}).then(
@@ -43,11 +44,14 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.timeOutService.startSub.subscribe( data => {
+      this.logout();
+    });
   }
 
   logout() {
-      this.lfsService.removeItem({key: 'isLoggedIn'});
       this.isLoggedIn = false;
+      this.lfsService.removeItem({key: 'isLoggedIn'});
       this.router.navigate(['home']);
   }
 

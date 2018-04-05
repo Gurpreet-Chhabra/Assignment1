@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FacebookService , LoginResponse , InitParams } from 'ngx-facebook';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
 
     initParams: InitParams = {
@@ -18,7 +20,7 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit() {
-      
+
   }
 
 }
