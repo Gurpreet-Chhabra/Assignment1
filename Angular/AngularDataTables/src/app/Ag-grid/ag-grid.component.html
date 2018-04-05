@@ -1,0 +1,22 @@
+<div style="height: 100%; padding-top: 35px; box-sizing: border-box;">
+    <ag-grid-angular
+                 #agGrid style="width: auto; height:700px;" class="ag-theme-balham"
+                 [gridOptions]="gridOptions"
+                 [columnDefs]="columnDefs"
+                 [rowData]="rowData"
+                 enableColResize
+                 rowSelection="multiple"
+                 [icons]="icons"
+                 [rowDragManaged]="true"
+                 (rowDragMove)="onRowDragMove($event)"
+                 (cellEditingStopped)="onedit($event)"
+                 enableSorting
+                 enableFilter
+                 groupHeaders
+                 rowSelection="multiple"
+                 (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+
+    <div style="position: absolute; top: 0px; left: 0px;">
+    <input type="text" (input)="onQuickFilterChanged($event.target.value)" id="quickFilter" placeholder="quick filter...">
+</div>

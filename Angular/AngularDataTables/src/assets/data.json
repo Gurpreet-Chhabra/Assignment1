@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": 860,
+      "firstName": "Superman",
+      "lastName": "Yoda",
+      "age": 21,
+      "birthdate": 21
+    },
+    {
+      "id": 870,
+      "firstName": "Foo",
+      "lastName": "Whateveryournameis",
+      "age": 21,
+      "birthdate": 23
+    },
+    {
+      "id": 590,
+      "firstName": "Toto",
+      "lastName": "Titi",
+      "age": 21,
+      "birthdate": 21
+    }
+  ]
+}
