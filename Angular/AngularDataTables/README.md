@@ -46,3 +46,20 @@ Includes Materialize table.
   In "material-table" component.
   Used "@angular/material" npm module
   Links referred: "https://material.angular.io/components/table/overview"
+
+Includes Material form floating form
+  In "materialform" component.
+  Links https://material.angular.io/components/form-field/overview
+
+Includes ng2-Charts
+
+  In charts folder
+  1) Bar Chart
+      In "bar-ng2-charts" component.
+  2) Pie chart
+      In "pie-ng2-charts" component.
+  3) Curve chart
+      In "curveLine-ng2-charts" component."
+
+Links referred: https://valor-software.com/ng2-charts/
+Included "NgxChartsModule" module

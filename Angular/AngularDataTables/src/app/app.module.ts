@@ -22,7 +22,8 @@ import { CalendarService } from './calendar/calendar.service';
 import { CalendarModule } from 'angular-calendar';
 import { AngularcalendarComponent } from './angularcalendar/angularcalendar.component';
 import {AppService} from './app.service';
-
+import { ChartModule } from './charts/chart.module';
+import { MaterialformComponent } from './materialform/materialform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import {AppService} from './app.service';
     AgiGridComponent,
     MyGridApplicationComponent,
     CalendarsComponent,
-    AngularcalendarComponent
+    AngularcalendarComponent,
+    MaterialformComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import {AppService} from './app.service';
     CommonModule,
     NgbModalModule.forRoot(),
     CalendarModule.forRoot(),
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    ChartModule
     // AgGridModule.forRoot()
   ],
   providers: [ MyGridApplicationService ,CalendarService,AppService],
