@@ -9,6 +9,16 @@ class  detail {
 
     this.athlete = obj.athlete,
     this.age = obj.age
+
+    console.log(this.athlete);
+  }
+}
+
+class test {
+  age: number;
+  constructor(obj) {
+
+    this.age = obj.age
   }
 }
 @Injectable()
@@ -19,9 +29,9 @@ export class AppService {
 
 
 //Resp.json() is of type any so gets casted in any type we assign
-   getData() : Observable<detail> {
+   getData() : Observable<number> {
      var _url = "https://raw.githubusercontent.com/ag-grid/ag-grid-docs/master/src/olympicWinnersSmall.json";
-     return this.http.get(_url).map(result => <detail>result.json().map(obj => new detail(obj)));
+     return this.http.get(_url).map(result => <number>result.json().slice(0,10).map(obj => new test(obj)));
    }
 
 }

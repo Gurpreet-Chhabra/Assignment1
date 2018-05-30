@@ -72,6 +72,7 @@ export class AngularcalendarComponent {
 
   events: CalendarEvent[] = [
     {
+      id: 1,
       start: subDays(startOfDay(new Date()), 1),
       end: addDays(new Date(), 1),
       title: 'A 3 day event',
@@ -79,6 +80,7 @@ export class AngularcalendarComponent {
       actions: this.actions
     },
     {
+      id: 2,
       start: startOfDay(new Date()),
       title: 'An event with no end date',
       color: colors.yellow,

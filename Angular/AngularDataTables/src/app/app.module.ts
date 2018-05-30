@@ -10,7 +10,7 @@ import { DatatableComponent } from './datatable/datatable.component';
 import { ServerTableComponent } from './server-table/server-table.component';
 import { MatTableModule ,MatSortModule,MatInputModule, MatFormFieldModule ,MatPaginatorModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
-import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule , NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FullCalendarModule } from 'ng-fullcalendar';
 import { MaterialTableComponent } from './material-table/material-table.component';
 import {AgGridModule} from "ag-grid-angular/main";
@@ -24,6 +24,9 @@ import { AngularcalendarComponent } from './angularcalendar/angularcalendar.comp
 import {AppService} from './app.service';
 import { ChartModule } from './charts/chart.module';
 import { MaterialformComponent } from './materialform/materialform.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +38,7 @@ import { MaterialformComponent } from './materialform/materialform.component';
     CalendarsComponent,
     AngularcalendarComponent,
     MaterialformComponent
+
   ],
   imports: [
     BrowserModule,
@@ -50,10 +54,11 @@ import { MaterialformComponent } from './materialform/materialform.component';
     HttpClientModule,
     FormsModule,
     CommonModule,
+    NgbModule.forRoot(),
     NgbModalModule.forRoot(),
     CalendarModule.forRoot(),
     AgGridModule.withComponents([]),
-    ChartModule
+    ChartModule,
     // AgGridModule.forRoot()
   ],
   providers: [ MyGridApplicationService ,CalendarService,AppService],
